@@ -1,1 +1,1 @@
-# Inverse-Kinematics-projectt
+# Inverse-Kinematics-project
