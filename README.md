@@ -14,7 +14,7 @@ O - Open-closed Principle
 // Funcția CalculateAngles() a fost adăugată și este deschisă pentru extensie, dar codul existent este închis pentru modificare.
 
 L - Liskov Substitution Principle
-// Funcția CalculateAngles() este înlocuibilă cu orice altă funcție care produce același rezultat.
+// Funcția CalculateAngles() poate fi înlocuită cu orice altă funcție care produce același rezultat.
 
 I - Interface Segregation Principle
 // Funcția start() este împărțită în două bucle care stochează fiecare proprietăți diferite ale obiectelor copil în liste separate.
