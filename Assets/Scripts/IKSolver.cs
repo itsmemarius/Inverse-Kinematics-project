@@ -6,9 +6,12 @@ using static Unity.VisualScripting.Metadata;
 public class IKSolver : MonoBehaviour
 {
     [SerializeField] private Vector3 _rotation;
+
     //public Transform Target;
     public GameObject Parent;
     public GameObject Target;
+    public Transform Shoulder;
+    // Set min and max angles for each bone 
 
     List<Vector3> effectorPositions = new List<Vector3>();
 
@@ -46,18 +49,19 @@ public class IKSolver : MonoBehaviour
 
         Vector3 targetPosition = Target.transform.position;
 
-        //for ( int i = 0; i < 6; i++)
-        //{
-        //    Debug.Log($" Rotation: of {objectChildren[i]}" + rotationProperties[i]);
-        //}
 
+        /*
+    
         // Loop through each child and rotate 10 degrees per second on the Y axis
         foreach (Transform child in objectChildren)
         {
+
             child.Rotate(Vector3.left * Time.deltaTime * 10);
-            Debug.Log($"{child.name} position is: {child.transform.position}");
+            Debug.Log($"{child.name} position is: {child.transform.position} and the rotation is {Vector3.left}");
+
         }
 
+        */
     }
 
     // Function to calculate the angles of each effector using Inverse Kinematics
